@@ -1,0 +1,13 @@
+D:\c-sharp-lab\c-sharp-projects\LLW_Framework\LLW_Framework\bin\Debug\LLW_Framework.dll
+D:\c-sharp-lab\c-sharp-projects\LLW_Framework\LLW_Framework\bin\Debug\LLW_Framework.pdb
+D:\c-sharp-lab\c-sharp-projects\LLW_Framework\LLW_Framework\bin\Debug\nunit.framework.dll
+D:\c-sharp-lab\c-sharp-projects\LLW_Framework\LLW_Framework\bin\Debug\WebDriver.dll
+D:\c-sharp-lab\c-sharp-projects\LLW_Framework\LLW_Framework\bin\Debug\WebDriver.Support.dll
+D:\c-sharp-lab\c-sharp-projects\LLW_Framework\LLW_Framework\bin\Debug\nunit.framework.xml
+D:\c-sharp-lab\c-sharp-projects\LLW_Framework\LLW_Framework\bin\Debug\WebDriver.xml
+D:\c-sharp-lab\c-sharp-projects\LLW_Framework\LLW_Framework\bin\Debug\WebDriver.Support.xml
+D:\c-sharp-lab\c-sharp-projects\LLW_Framework\LLW_Framework\obj\Debug\LLW_Framework.csprojResolveAssemblyReference.cache
+D:\c-sharp-lab\c-sharp-projects\LLW_Framework\LLW_Framework\obj\Debug\LLW_Framework.SetUpData.resources
+D:\c-sharp-lab\c-sharp-projects\LLW_Framework\LLW_Framework\obj\Debug\LLW_Framework.csproj.GenerateResource.Cache
+D:\c-sharp-lab\c-sharp-projects\LLW_Framework\LLW_Framework\obj\Debug\LLW_Framework.dll
+D:\c-sharp-lab\c-sharp-projects\LLW_Framework\LLW_Framework\obj\Debug\LLW_Framework.pdb
