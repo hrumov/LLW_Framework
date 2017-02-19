@@ -10,41 +10,26 @@ using System.Threading.Tasks;
 namespace LLW_Framework
 {
     [TestFixture]
-    public class JournalTest : BaseTestNUnit
+    public class JournalTest
     {
-        //internal IWebDriver driver;
-        static List<Journals> dataForParams = NavFromFile.MakeParamsData(ResourceFile.JournalsToTest);
-        static AssertsAccumulator accumulator = new AssertsAccumulator();
+        internal IWebDriver driver;
 
         [SetUp]
         public void SetUp()
         {
-
-            driverForJournals.Manage().Window.Maximize();
-            driverForJournals.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
-
-            /*driver = new ChromeDriver();
+            driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));*/
+            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
         }
 
         [Test]
-        [TestCaseSource("dataForParams")]
-        public void NavigationTest(Journals j)
+        public void a()
         {
-            //JournalPage jp = new JournalPage(driver);
-
-            JournalPage.GoToTheJournal(j.journalName, driverForJournals);
-            //JournalPage.
-
-            
-
-            //driver.Navigate().GoToUrl(SetUpData.BaseUrl + "aacr");
-            //JournalPage jp = new JournalPage(driver);
+            driver.Navigate().GoToUrl(SetUpData.BaseUrl + "aacr");
+            JournalPage jp = new JournalPage(driver);
             //driver.FindElement(By.XPath("//span[contains(text(), /aacr/subjects )]"));
             //bool isElementPresent = driver.FindElement(By.XPath("//span[contains(text(), 'Subjects' )]")).Enabled;
-
-            bool isElementPresent = driverForJournals.FindElement(By.XPath("//a[contains(text(), 'Articles & Issues')]")).Enabled;
+            bool isElementPresent = driver.FindElement(By.XPath("//a[contains(text(), 'Articles & Issues')]")).Enabled;
             Assert.True(isElementPresent);
 
         }
@@ -52,7 +37,7 @@ namespace LLW_Framework
         [OneTimeTearDown]
         public void CloseDriver()
         {
-            driverForJournals.Dispose();
+            driver.Dispose();
         }
     }
 }
