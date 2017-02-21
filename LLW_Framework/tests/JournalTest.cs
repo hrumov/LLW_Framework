@@ -3,6 +3,7 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,9 +14,22 @@ namespace LLW_Framework
     [TestFixture]
     public class JournalTest : BaseTestClass
     {
-        static List<Journals> navParams = NavFromFile.MakeParamsData(ResourceFile.JournalName);
-        static AssertsAccumulator accumulator = new AssertsAccumulator();
-        static JournalPage jp = new JournalPage();
+        private static List<Journals> navParams = NavFromFile.MakeParamsData(ResourceFile.JournalName);
+        private static AssertsAccumulator accumulator = new AssertsAccumulator();
+        private static JournalPage jp = new JournalPage();
+        //----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        private static IEnumerable<TestCaseData> AddCases()
+        {
+            yield return new TestCaseData("123");
+            yield return new TestCaseData("234");
+            yield return new TestCaseData("345");
+        }
+
+        private static TestCaseData CreateTestCaseData(Journals j)
+        {
+            return new TestCaseData(); 
+        }
 
         //static Logger logger = LogManager.GetCurrentClassLogger();
 
@@ -27,7 +41,17 @@ namespace LLW_Framework
         }
 
         [Test]
-        [Ignore("123")]
+        [TestCaseSource("AddCases")]
+        public void paramTest(string name)
+        {
+            Assert.IsNotNull(name);
+        }
+        //----------------------------------------------------------------------------------------------------------------------------------------------------------
+        /*
+        //переделать параметризацию. она возможна для string, int
+        //к собесу jenkins, serialisation
+        [Test]
+        //[Ignore("123")]
         [TestCaseSource("navParams")]
         public void CheckJournalexisting(Journals j)
         {
@@ -37,6 +61,7 @@ namespace LLW_Framework
         }
 
         [Test]
+        //[Ignore("123")]
         [TestCaseSource("navParams")]
         public void NavigationTest(Journals j)
         {
@@ -62,11 +87,12 @@ namespace LLW_Framework
             }
             accumulator.Release();
         }
-
+        */
         [OneTimeTearDown]
         public void CloseDriver()
         {
-            driverForJournals.Dispose();
+            //driverForJournals.Dispose();
+            driverForJournals.Quit();
         }
     }
 }

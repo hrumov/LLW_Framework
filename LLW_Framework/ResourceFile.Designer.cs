@@ -88,7 +88,7 @@ namespace LLW_Framework {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to D:\epam-lab\c-sharp-lab\LLW_Framework\Styling\Responsive-Batch-1.xlsx.
+        ///   Looks up a localized string similar to D:\c-sharp-lab\c-sharp-projects\LLW_Framework\Styling\Responsive-Batch-1.xlsx.
         /// </summary>
         internal static string FilePath {
             get {

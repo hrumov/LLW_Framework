@@ -28,7 +28,8 @@ namespace LLW_Framework
         [OneTimeTearDown]
         public void CloseDriver()
         {
-            driverForJournals.Dispose();
+            driverForJournals.Quit();
+            //driverForJournals.Dispose();
         }
     }
 }
