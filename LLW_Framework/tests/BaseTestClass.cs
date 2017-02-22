@@ -13,6 +13,6 @@ namespace LLW_Framework
     public class BaseTestClass
     {
         public IWebDriver driverForJournals = BrowserFactory.GetBrowser(ResourceFile.Browser);
-        public IWebDriver driverForLogin = BrowserFactory.GetBrowser(ResourceFile.Browser);
+        //public IWebDriver driverForLogin = BrowserFactory.GetBrowser(ResourceFile.Browser);
     }
 }

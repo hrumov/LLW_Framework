@@ -26,12 +26,26 @@ namespace LLW_Framework
             yield return new TestCaseData("345");
         }
 
+        private static TestCaseData CreateTestCaseData(List<string> j)
+        {
+            return new TestCaseData();
+        }
+
         private static TestCaseData CreateTestCaseData(Journals j)
         {
-            return new TestCaseData(); 
+            return new TestCaseData();
         }
 
         //static Logger logger = LogManager.GetCurrentClassLogger();
+
+        [Test]
+        [TestCaseSource("AddCases")]
+        public void paramTestAAAA(string name)
+        {
+            Assert.IsNotNull(name);
+        }
+
+        //----------------------------------------------------------------------------------------------------------------------------------------------------------
 
         [SetUp]
         public void SetUp()
@@ -40,18 +54,10 @@ namespace LLW_Framework
             driverForJournals.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
         }
 
-        [Test]
-        [TestCaseSource("AddCases")]
-        public void paramTest(string name)
-        {
-            Assert.IsNotNull(name);
-        }
-        //----------------------------------------------------------------------------------------------------------------------------------------------------------
-        /*
         //переделать параметризацию. она возможна для string, int
         //к собесу jenkins, serialisation
         [Test]
-        //[Ignore("123")]
+        [Ignore("123")]
         [TestCaseSource("navParams")]
         public void CheckJournalexisting(Journals j)
         {
@@ -61,7 +67,7 @@ namespace LLW_Framework
         }
 
         [Test]
-        //[Ignore("123")]
+        [Ignore("123")]
         [TestCaseSource("navParams")]
         public void NavigationTest(Journals j)
         {
@@ -87,7 +93,7 @@ namespace LLW_Framework
             }
             accumulator.Release();
         }
-        */
+
         [OneTimeTearDown]
         public void CloseDriver()
         {

@@ -15,21 +15,25 @@ namespace LLW_Framework
         [SetUp]
         public void SetUp()
         {
-            driverForLogin.Manage().Window.Maximize();
-            driverForLogin.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
+            driverForJournals.Manage().Window.Maximize();
+            driverForJournals.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
+
+            //driverForLogin.Manage().Window.Maximize();
+            //driverForLogin.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
         }
 
         [Test]
         public void LoginCheck()
         {
-            Assert.True(lp.CheckLogin(driverForLogin));
+            Assert.True(lp.CheckLogin(driverForJournals));
+            //Assert.True(lp.CheckLogin(driverForLogin));
         }
 
         [OneTimeTearDown]
         public void CloseDriver()
         {
             driverForJournals.Quit();
-            //driverForJournals.Dispose();
+            //driverForLogin.Quit();
         }
     }
 }
