@@ -16,7 +16,7 @@ namespace LLW_Framework
         public string menuItemXPath { get; } = "//span[contains(text(), '***' )]"; //'Subjects'
         public string journalName { get; } = "aacr";
 
-        static Logger logger = LogManager.GetCurrentClassLogger();
+        //static Logger logger = LogManager.GetCurrentClassLogger();
 
         public JournalPage(IWebDriver driver)
         {
@@ -37,13 +37,13 @@ namespace LLW_Framework
             try
             {
                 url = string.Concat(ResourceFile.BaseUrl, journalName);
-                logger.Debug("Going to the journal page {0}", url);
+                //logger.Debug("Going to the journal page {0}", url);
                 driver.Navigate().GoToUrl(url);
             }
             catch (Exception e)
             {
                 string message = string.Format("The journal {0} does not exist", journalName);
-                logger.Error(e, message);
+                //logger.Error(e, message);
             }
             if (driver.Url.Contains("PageNotFoundError"))
                 return true;

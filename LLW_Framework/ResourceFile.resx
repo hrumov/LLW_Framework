@@ -121,8 +121,8 @@
     <value>http://journals.lww.com/</value>
   </data>
   <data name="Browser" xml:space="preserve">
-    <value>chrome</value>
-    <comment>chrome or firefox</comment>
+    <value>remote</value>
+    <comment>chrome / firefox / remote</comment>
   </data>
   <data name="ElementWaitingTime" xml:space="preserve">
     <value>10</value>

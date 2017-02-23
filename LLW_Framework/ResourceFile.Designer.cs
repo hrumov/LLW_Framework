@@ -70,7 +70,7 @@ namespace LLW_Framework {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to chrome.
+        ///   Looks up a localized string similar to remote.
         /// </summary>
         internal static string Browser {
             get {

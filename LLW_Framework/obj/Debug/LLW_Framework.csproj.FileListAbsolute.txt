@@ -28,3 +28,4 @@ D:\c-sharp-lab\c-sharp-projects\LLW_Framework\LLW_Framework\obj\Debug\LLW_Framew
 D:\c-sharp-lab\c-sharp-projects\LLW_Framework\LLW_Framework\obj\Debug\LLW_Framework.csproj.GenerateResource.Cache
 D:\c-sharp-lab\c-sharp-projects\LLW_Framework\LLW_Framework\obj\Debug\LLW_Framework.dll
 D:\c-sharp-lab\c-sharp-projects\LLW_Framework\LLW_Framework\obj\Debug\LLW_Framework.pdb
+D:\c-sharp-lab\c-sharp-projects\LLW_Framework\LLW_Framework\obj\Debug\LLW_Framework.csprojResolveAssemblyReference.cache
