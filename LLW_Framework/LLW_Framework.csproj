@@ -79,12 +79,14 @@
       <DependentUpon>ResourceFile.resx</DependentUpon>
     </Compile>
     <Compile Include="utils\Structures.cs" />
+    <Compile Include="utils\XMLDeserializable.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="XMLJournals.xml" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>

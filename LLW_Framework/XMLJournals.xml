@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<journals>
+  <journal>
+    aidsonline
+    <menu>
+      <menuHeader>
+        Articles #x26 Issues
+        <menuItem>Current Issue</menuItem>
+        <menuItem>Previous Issues</menuItem>
+        <menuItem>Published Ahead-of-Print</menuItem>
+      </menuHeader>
+      <menuHeader>Collections</menuHeader>
+      <menuHeader>
+        For Authors
+        <menuItem>Information for Authors</menuItem>
+        <menuItem>Language Editing Services</menuItem>.
+      </menuHeader>
+      <menuHeader>
+        Journal Info
+        <menuItem>About the Journal</menuItem>
+        <menuItem>Editorial Board</menuItem>
+        <menuItem>Advertising</menuItem>
+        <menuItem>Open Access</menuItem>
+        <menuItem>Subscription Services</menuItem>
+        <menuItem>Reprints</menuItem>
+        <menuItem>Rights and Permissions</menuItem>
+      </menuHeader>
+    </menu>
+  </journal>
+  <journal>
+    academicmedicine
+    <menu>
+      <menuHeader>
+        Articles #x26 Issues
+        <menuItem>Current Issue</menuItem>
+        <menuItem>Previous Issues</menuItem>
+        <menuItem>Published Ahead-of-Print</menuItem>
+      </menuHeader>
+      <menuHeader>
+        Collections
+        <menuItem>New Conversations - Health Care Reform and Academic Health Centers</menuItem>
+        <menuItem>AM Classics</menuItem>
+        <menuItem>Editorials of David P. Sklar, MD</menuItem>
+        <menuItem>Entrustable Professional Activities</menuItem>
+        <menuItem>Joining Forces Collection</menuItem>
+        <menuItem>View All</menuItem>
+      </menuHeader>
+      <menuHeader>
+        For Authors
+        <menuItem>Information for Authors</menuItem>
+        <menuItem>Language Editing Services</menuItem>
+      </menuHeader>
+      <menuHeader>
+        Journal Info
+        <menuItem>About the Journal</menuItem>
+        <menuItem>About the AAMC</menuItem>
+        <menuItem>Journal Masthead</menuItem>
+        <menuItem>Submit a Manuscript</menuItem>
+        <menuItem>Advertising Information</menuItem>
+        <menuItem>Subscription Services</menuItem>
+        <menuItem>Reprints and Back Issues</menuItem>
+        <menuItem>Classified Ads</menuItem>
+        <menuItem>Rights and Permissions</menuItem>
+        <menuItem>For Reviewers</menuItem>
+        <menuItem>For Media</menuItem>
+        <menuItem>eBooks</menuItem>
+      </menuHeader>
+    </menu>
+  </journal>
+</journals>
